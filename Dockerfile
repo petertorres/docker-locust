@@ -17,7 +17,7 @@ EXPOSE 5558
 # Install dependencies
 #======================
 COPY requirements.txt /tmp/
-RUN pip3 install -r /tmp/requirements.txt
+RUN pip3 install -r /tmp/requirements.txt --upgrade
 
 #=====================
 # Start docker-locust
