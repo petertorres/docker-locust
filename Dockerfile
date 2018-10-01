@@ -1,4 +1,4 @@
-FROM registry.opensource.zalan.do/stups/ubuntu:18.04-15
+FROM 3.7.0-alpine3.8:latest
 
 #=======================
 # General Configuration
