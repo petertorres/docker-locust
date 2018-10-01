@@ -1,4 +1,4 @@
-FROM 3.7.0-alpine3.8:latest
+FROM registry.opensource.zalan.do/stups/ubuntu:18.04-15
 
 #==============
 # Expose Ports
