@@ -1,4 +1,4 @@
-FROM FROM swernst/locusts:latest
+FROM swernst/locusts:latest
 
 #=======================
 # General Configuration
