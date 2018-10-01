@@ -1,3 +1,4 @@
+awscli
 autopep8
 boto3
 coverage
