@@ -1,6 +1,6 @@
 awscli
 autopep8
-boto3
+boto3==1.9.14
 coverage
 enum34
 flake8
