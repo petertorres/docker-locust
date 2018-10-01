@@ -1,4 +1,4 @@
-FROM artifactory.services.dicedev.dhiaws.com:5000/dice/dice-locust-qa:1.0.0
+FROM registry.opensource.zalan.do/stups/ubuntu:18.04-15
 
 #=======================
 # General Configuration
