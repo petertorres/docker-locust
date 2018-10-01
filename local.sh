@@ -97,7 +97,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________
 EOF
     if [ -z $IMAGE ]; then
-        IMAGE="artifactory.services.dicedev.dhiaws.com:5000/dice/dice-locust-qa"
+        IMAGE="artifactory.services.dicedev.dhiaws.com:5000/dice/dice-locust-qa:1.0.0"
     fi
 
     [ -z "$TARGET" ] && read -p "Target url: " TARGET
