@@ -1,11 +1,5 @@
 FROM 3.7.0-alpine3.8:latest
 
-#=======================
-# General Configuration
-#=======================
-ENV REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
-RUN apt-get update && apt-get install -y jq python3-dev python3-zmq python3-pip && rm -rf /var/lib/apt/lists/*
-
 #==============
 # Expose Ports
 #==============
