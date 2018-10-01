@@ -1,4 +1,4 @@
-FROM registry.opensource.zalan.do/stups/ubuntu:18.04-15
+FROM artifactory.services.dicedev.dhiaws.com:5000/dice/dice-locust-qa:latest
 
 #==============
 # Expose Ports
