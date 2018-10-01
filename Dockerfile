@@ -1,4 +1,4 @@
-FROM swernst/locusts:latest
+FROM registry.opensource.zalan.do/stups/ubuntu:18.04-15
 
 #=======================
 # General Configuration
