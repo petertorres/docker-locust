@@ -178,7 +178,8 @@ EOF
         echo "Run in standalone mode"
 
         [[ ! -d "./reports" ]] && mkdir reports
-
+        echo "${PWD}"
+        ls
         docker run -i --rm -v $PWD/reports:/opt/reports -v ~/.aws:/root/.aws -v $PWD/:/opt/script \
         -v $PWD/credentials:/meta/credentials -p 8089:8089 -e ROLE=standalone -e TARGET_HOST=$TARGET \
         -e LOCUST_FILE=$LOCUST_FILE -e SLAVE_MUL=$SLAVES -e AUTOMATIC=$AUTOMATIC -e USERS=$USERS \
