@@ -179,7 +179,7 @@ EOF
 
         [[ ! -d "./reports" ]] && mkdir reports
         
-        pip3 freeze | grep locustio
+        pip freeze | grep locustio
         
         docker run -i --rm -v $PWD/reports:/opt/reports -v ~/.aws:/root/.aws -v $PWD/:/opt/script \
         -v $PWD/credentials:/meta/credentials -p 8089:8089 -e ROLE=standalone -e TARGET_HOST=$TARGET \
