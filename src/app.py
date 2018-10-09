@@ -183,7 +183,7 @@ def send_usage_statistics(target_host):
         app_id = os.getenv('APPLICATION_ID')
         build_url = os.getenv('BUILD_URL')
         cdp_target_repository = os.getenv('CDP_TARGET_REPOSITORY')
-        image_version = os.getenv('DL_IMAGE_VERSION', 'unknown')
+        image_version = os.getenv('DL_IMAGE_VERSION', 'latest')
 
         host_in_array = target_host.split('.')
         if target_host.endswith('zalan.do') or 'zalando' in target_host or 'zalon' in target_host:
