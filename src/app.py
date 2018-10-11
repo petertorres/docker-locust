@@ -346,7 +346,7 @@ def get_or_raise(env):
     return env_value
 
 
-def kill(signal):
+def kill(signal, frame):
     logger.info('Received KILL signal')
     for s in processes:
         s.kill(s)
