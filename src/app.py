@@ -349,7 +349,7 @@ def get_or_raise(env):
 def kill(signal, frame):
     logger.info('Received KILL signal')
     for s in processes:
-        s.kill(s)
+        s.kill(s,event=None)
 
 
 if __name__ == '__main__':
