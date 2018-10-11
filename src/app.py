@@ -346,13 +346,10 @@ def get_or_raise(env):
     return env_value
 
 
-def kill(signal, frame):
+def kill(signal, frame=''):
     logger.info('Received KILL signal')
     for s in processes:
-        try:
-            s.kill(s)
-        except:
-            logger.info('Stopped Docker containers')
+        s.kill(s)
 
 
 if __name__ == '__main__':
