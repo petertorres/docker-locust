@@ -185,7 +185,7 @@ EOF
         
         ls
         
-        docker cp ${PWD}/. $(docker ps -a -q --filter ancestor=artifactory.services.dicedev.dhiaws.com:5000/dice/locust-dice-qa --format="{{.ID}}”):/opt/script
+        docker cp $PWD/. $(docker ps -aqf "name=artifactory.services.dicedev.dhiaws.com:5000/dice/locust-dice-qa"):/opt/script
         
         docker run -i --rm -v $PWD/reports:/opt/reports -v $PWD/:/opt/script \
         -v $PWD/credentials:/meta/credentials -p 8089:8089 -e ROLE=standalone -e TARGET_HOST=$TARGET \
