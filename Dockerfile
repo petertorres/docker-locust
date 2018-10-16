@@ -11,6 +11,7 @@ EXPOSE 5558
 # Install dependencies
 #======================
 COPY requirements.txt /tmp/
+RUN rm -rf /opt/script
 RUN pip3 install -r /tmp/requirements.txt --upgrade
 
 #=====================
